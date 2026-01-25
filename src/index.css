@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --neon-cyan: #00f3ff;
+  --neon-magenta: #ff00ff;
+  --neon-blue: #0066ff;
+  --bg-dark: #050505;
+}
+
+body {
+  @apply bg-[#050505] text-white font-sans overflow-hidden m-0 p-0;
+  background: radial-gradient(circle at center, #111 0%, #050505 100%);
+}
+
+#app {
+  @apply w-screen h-screen flex flex-col items-center justify-center relative;
+}
+
+.neon-glow-cyan {
+  box-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
+}
+
+.neon-glow-magenta {
+  box-shadow: 0 0 10px var(--neon-magenta), 0 0 20px var(--neon-magenta);
+}
+
+.neon-text-cyan {
+  text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+#menu {
+  @apply transition-opacity duration-500;
+}
+
+canvas {
+  @apply max-w-full max-h-full aspect-video border border-white/10 rounded-lg;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.2) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  background-size: 100% 4px, 3px 100%;
+}

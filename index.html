@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Pong | Futuristic Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <div id="ui" class="absolute inset-0 pointer-events-none flex flex-col items-center justify-between py-10">
+        <div class="flex justify-between w-full max-w-4xl px-20">
+          <div id="p1-score" class="text-6xl font-bold neon-text-cyan opacity-80">00</div>
+          <div id="p2-score" class="text-6xl font-bold text-white/20">00</div>
+        </div>
+        
+        <div id="menu" class="pointer-events-auto flex flex-col items-center gap-6 bg-black/60 backdrop-blur-md p-10 rounded-2xl border border-white/10">
+          <h1 class="text-5xl font-bold tracking-widest neon-text-cyan mb-4">NEON PONG</h1>
+          <button id="start-btn" class="px-10 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full transition-all duration-300 text-xl font-medium cursor-pointer">START GAME</button>
+          <div class="flex gap-4">
+            <button id="difficulty-btn" class="px-6 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full transition-all text-sm">DIFF: NORMAL</button>
+            <button id="audio-btn" class="px-6 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full transition-all text-sm">AUDIO: ON</button>
+          </div>
+        </div>
+      </div>
+      <canvas id="game-canvas"></canvas>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
