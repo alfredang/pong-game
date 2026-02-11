@@ -57,10 +57,22 @@ No external MP3 files are used! All sound effects are synthesized on-the-fly:
 
 ---
 
+## 🐳 Docker
+
+```bash
+docker build -t pong-game .
+docker run -p 8080:80 pong-game
+```
+
+Then open [http://localhost:8080](http://localhost:8080).
+
+---
+
 ## 🛠️ Performance & Deployment
 
 - **60 FPS Gameplay**: Physics updates are decoupled from frame rendering to ensure smooth motion.
 - **GitHub Pages**: Automated CI/CD deployment via GitHub Actions.
+- **Docker**: Multi-stage build with nginx for self-hosted deployment.
 - **Zero Assets**: The entire game is self-contained in less than 50kb (gzipped), using no external images or audio files.
 
 ---
