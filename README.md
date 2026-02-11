@@ -4,6 +4,8 @@
 
 **Live Demo:** [https://alfredang.github.io/pong-game/](https://alfredang.github.io/pong-game/)
 
+![Neon Pong Screenshot](pong-game.png)
+
 Neon Pong is a modern, sleek take on the classic arcade game. Built with a focus on minimalist aesthetics and high-performance gameplay, it combines the nostalgic feel of the 80s with futuristic design elements like neon glows, CRT scanlines, and synthesized audio.
 
 ---
