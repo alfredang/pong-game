@@ -61,6 +61,15 @@ No external MP3 files are used! All sound effects are synthesized on-the-fly:
 
 ## 🐳 Docker
 
+### Quick Start
+Run the game instantly using Docker:
+```bash
+docker run -d -p 8080:80 alfredang/pong-game:latest
+```
+Then open [http://localhost:8080](http://localhost:8080).
+
+### Build Locally
+If you want to build the image yourself:
 ```bash
 docker build -t pong-game .
 docker run -p 8080:80 pong-game
